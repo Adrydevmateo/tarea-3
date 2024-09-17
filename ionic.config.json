@@ -1,0 +1,8 @@
+{
+  "name": "tarea3-prototype",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "50704d43"
+}
