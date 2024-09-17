@@ -29,7 +29,7 @@ export default function Experience() {
 						<IonTitle size="large">Experiencia Personal</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div id="container">
+				<div className="page_container">
 					<strong>qwe</strong>
 					<p>
 						Explore{" "}

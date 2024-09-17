@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "ionic.ionic"
+      "streetsidesoftware.code-spell-checker",
+      "formulahendry.auto-rename-tag"
     ]
 }

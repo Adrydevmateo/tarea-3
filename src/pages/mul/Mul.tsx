@@ -29,7 +29,7 @@ export default function Mul() {
 						<IonTitle size="large">Tabla de Multiplicar</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div id="container">
+				<div className="page_container">
 					<strong>qwe</strong>
 					<p>
 						Explore{" "}

@@ -1,0 +1,51 @@
+:root {
+  --font-size: 14px;
+}
+
+html {
+  font-size: var(--font-size);
+  text-wrap: pretty;
+  word-break: break-all;
+}
+
+img {
+  max-width: 200px;
+  min-width: 0;
+}
+
+/* Utility Classes */
+.title {
+  font-size: calc(var(--font-size) + 20px);
+}
+
+.subtitle {
+  font-size: calc(var(--font-size) + 4px);
+}
+
+.muted {
+  opacity: .8;
+}
+
+.rounded_img {
+  border-radius: 100%;
+}
+
+.page_container {
+  padding: 10px 20px;
+}
+
+.primary_link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  color: bisque;
+  background-color: royalblue;
+  font-weight: bold;
+  margin: 3px;
+}
+
+@media (min-width: 400px) {
+  .page_container {
+    padding: 20px 40px;
+  }
+}

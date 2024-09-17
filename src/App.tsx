@@ -35,9 +35,8 @@ import "@ionic/react/css/display.css";
 /* import '@ionic/react/css/palettes/dark.class.css'; */
 import "@ionic/react/css/palettes/dark.system.css";
 
-/* Theme variables */
-import "@theme/variables.css";
-import "@theme/containers.css";
+/* Custom Styles */
+import "@assets/stylesheets/main.css";
 
 import { Routes } from "@/App.types";
 import Home from "@pages/home";

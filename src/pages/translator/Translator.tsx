@@ -29,7 +29,7 @@ export default function Translator() {
 						<IonTitle size="large">Traductor de Números a Letras</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div id="container">
+				<div className="page_container">
 					<strong>qwe</strong>
 					<p>
 						Explore{" "}

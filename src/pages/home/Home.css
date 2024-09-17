@@ -1,0 +1,15 @@
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#home-page > * {
+  flex-grow: 1;
+}
+
+.home__links {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 10px; */
+}

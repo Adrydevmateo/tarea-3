@@ -29,7 +29,7 @@ export default function Sum() {
 						<IonTitle size="large">Sumadora</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div id="container">
+				<div className="page_container">
 					<strong>qwe</strong>
 					<p>
 						Explore{" "}

@@ -14,7 +14,7 @@ export default defineConfig({
 			"@": resolve(root, ""),
 			"@components": resolve(root, "components"),
 			"@pages": resolve(root, "pages"),
-			"@theme": resolve(root, "theme"),
+			"@assets": resolve(root, "assets"),
 		},
 	},
 	plugins: [react(), legacy()],
