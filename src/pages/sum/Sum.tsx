@@ -60,7 +60,9 @@ export default function Sum() {
 						<button type="submit">Sumar</button>
 					</form>
 					<hr />
-					<p id="resultado">Resultado: {}</p>
+					<h1>
+						Resultado: <span id="resultado"> </span>
+					</h1>
 				</div>
 			</IonContent>
 		</IonPage>
