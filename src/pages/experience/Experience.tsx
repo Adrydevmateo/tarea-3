@@ -29,18 +29,14 @@ export default function Experience() {
 						<IonTitle size="large">Experiencia Personal</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div className="page_container">
-					<strong>qwe</strong>
-					<p>
-						Explore{" "}
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://ionicframework.com/docs/components"
-						>
-							UI Components
-						</a>
-					</p>
+				<div className="page_container" id="experience-page">
+					<h1>Mi experiencia realizando esta tarea</h1>
+					<a href="/" rel="noreferrer">
+						Ver en YouTube
+					</a>
+					<a href="/" rel="noreferrer">
+						Ver Código
+					</a>
 				</div>
 			</IonContent>
 		</IonPage>
