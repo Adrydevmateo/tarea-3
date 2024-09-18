@@ -1,32 +1,38 @@
 import {
+	IonButton,
 	IonButtons,
 	IonContent,
 	IonHeader,
+	IonInput,
+	IonItem,
+	IonList,
 	IonMenuButton,
 	IonPage,
 	IonTitle,
 	IonToolbar,
 } from "@ionic/react";
 import "./Sum.css";
-import type { FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 
 // TODO: Una página donde se puedan sumar dos números y mostrar el resultado.
 
+type Sum = {
+	x: number;
+	y: number;
+	z: number;
+};
+
 export default function Sum() {
-	function handleSubmit(e: FormEvent) {
-		e.preventDefault();
-		const form = e.target as HTMLFormElement;
-		const formData = new FormData(form);
+	const [sum, setSum] = useState<Sum>({
+		x: 0,
+		y: 0,
+		z: 0,
+	});
 
-		const x = Number(formData.get("x"));
-		if (!x) alert("Por favor introduce el primer número");
+	const updateSum = (key: keyof Sum, val: number) =>
+		setSum({ ...sum, [key]: val });
 
-		const y = Number(formData.get("y"));
-		if (!y) alert("Por favor introduce el primer número");
-
-		const result = document.getElementById("resultado") as HTMLElement;
-		result.innerHTML = String(x + y);
-	}
+	const sumNumbers = () => updateSum("z", sum.x + sum.y);
 
 	return (
 		<IonPage>
@@ -45,25 +51,45 @@ export default function Sum() {
 						<IonTitle size="large">Sumadora</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div className="page_container" id="sum-page">
-					<form onSubmit={handleSubmit}>
-						<div className="form-field">
-							<label htmlFor="x">Ingresa el primer número</label>
-							<input type="number" name="x" id="x" />
-						</div>
 
-						<div className="form-field">
-							<label htmlFor="y">Ingresa el segundo número</label>
-							<input type="number" name="y" id="y" />
-						</div>
+				<IonContent fullscreen={true}>
+					<IonItem>
+						<IonInput
+							label="Ingresa el primer número:"
+							placeholder="Ejemplo: 2"
+							type="number"
+							name="x"
+							value={sum.x}
+							onInput={({ target }) =>
+								updateSum("x", Number((target as HTMLInputElement).value))
+							}
+						/>
+					</IonItem>
+					<IonItem>
+						<IonInput
+							label="Ingresa el segundo número:"
+							placeholder="Ejemplo: 5"
+							type="number"
+							name="y"
+							value={sum.y}
+							onInput={({ target }) =>
+								updateSum("y", Number((target as HTMLInputElement).value))
+							}
+						/>
+					</IonItem>
+					<IonButton
+						color={"tertiary"}
+						expand="full"
+						className="ion-margin"
+						onClick={sumNumbers}
+					>
+						Sumar
+					</IonButton>
 
-						<button type="submit">Sumar</button>
-					</form>
-					<hr />
-					<h1>
-						Resultado: <span id="resultado"> </span>
-					</h1>
-				</div>
+					<IonItem color={"success"}>
+						<h1>Resultado: {sum.z}</h1>
+					</IonItem>
+				</IonContent>
 			</IonContent>
 		</IonPage>
 	);
