@@ -16,7 +16,7 @@ export default function Experience() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle size="small">Experiencia Personal</IonTitle>
+					<IonTitle>Experiencia Personal</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 

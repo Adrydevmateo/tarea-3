@@ -34,7 +34,7 @@ export default function Sum() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle size="small">Sumadora</IonTitle>
+					<IonTitle>Sumadora</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 

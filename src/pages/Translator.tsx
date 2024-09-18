@@ -58,7 +58,7 @@ export default function Translator() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle size="small">Traductor de Números a Letras</IonTitle>
+					<IonTitle>Traductor de Números a Letras</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 

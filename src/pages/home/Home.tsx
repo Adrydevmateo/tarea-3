@@ -18,7 +18,7 @@ export default function Home() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle size="small">Página Inicial</IonTitle>
+					<IonTitle>Página Inicial</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 
