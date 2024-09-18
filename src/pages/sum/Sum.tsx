@@ -19,20 +19,16 @@ import { useState, type FormEvent } from "react";
 type Sum = {
 	x: number;
 	y: number;
-	z: number;
 };
 
 export default function Sum() {
 	const [sum, setSum] = useState<Sum>({
 		x: 0,
 		y: 0,
-		z: 0,
 	});
 
 	const updateSum = (key: keyof Sum, val: number) =>
 		setSum({ ...sum, [key]: val });
-
-	const sumNumbers = () => updateSum("z", sum.x + sum.y);
 
 	return (
 		<IonPage>
@@ -77,17 +73,8 @@ export default function Sum() {
 					/>
 				</IonItem>
 
-				<IonButton
-					color={"dark"}
-					expand="full"
-					className="ion-margin"
-					onClick={sumNumbers}
-				>
-					Sumar
-				</IonButton>
-
-				<IonItem color={"light"}>
-					<h1>Resultado: {sum.z}</h1>
+				<IonItem>
+					<h1>Resultado: {sum.x + sum.y}</h1>
 				</IonItem>
 			</IonContent>
 		</IonPage>
