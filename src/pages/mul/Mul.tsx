@@ -2,6 +2,10 @@ import {
 	IonButtons,
 	IonContent,
 	IonHeader,
+	IonInput,
+	IonItem,
+	IonLabel,
+	IonList,
 	IonMenuButton,
 	IonPage,
 	IonTitle,
@@ -34,34 +38,28 @@ export default function Mul() {
 						<IonTitle size="large">Tabla de Multiplicar</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div className="page_container" id="mul-page">
-					<form>
-						<label htmlFor="x">Ingresa un número:</label>
-						<input
+				<IonList>
+					<IonItem>
+						<IonInput
+							label="Ingresa un número:"
+							placeholder="Ejemplo: 2"
 							type="number"
 							name="x"
-							id="x"
 							value={x}
-							onChange={({ target }) => setX(Number(target.value))}
+							onInput={({ target }) =>
+								setX(Number((target as HTMLInputElement).value))
+							}
 						/>
-					</form>
-
+					</IonItem>
 					<hr />
-
-					<div>
-						<ol>
-							{mul.map((m) => (
-								<li key={m}>
-									<b>{m}</b>
-									<b>x</b>
-									<b>{x}</b>
-									<b> = </b>
-									<b>{m * x}</b>
-								</li>
-							))}
-						</ol>
-					</div>
-				</div>
+					{mul.map((m) => (
+						<IonItem key={m}>
+							<b>
+								{x} x {m} = {m * x}
+							</b>
+						</IonItem>
+					))}
+				</IonList>
 			</IonContent>
 		</IonPage>
 	);

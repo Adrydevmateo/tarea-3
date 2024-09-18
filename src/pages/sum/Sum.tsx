@@ -52,44 +52,43 @@ export default function Sum() {
 					</IonToolbar>
 				</IonHeader>
 
-				<IonContent fullscreen={true}>
-					<IonItem>
-						<IonInput
-							label="Ingresa el primer número:"
-							placeholder="Ejemplo: 2"
-							type="number"
-							name="x"
-							value={sum.x}
-							onInput={({ target }) =>
-								updateSum("x", Number((target as HTMLInputElement).value))
-							}
-						/>
-					</IonItem>
-					<IonItem>
-						<IonInput
-							label="Ingresa el segundo número:"
-							placeholder="Ejemplo: 5"
-							type="number"
-							name="y"
-							value={sum.y}
-							onInput={({ target }) =>
-								updateSum("y", Number((target as HTMLInputElement).value))
-							}
-						/>
-					</IonItem>
-					<IonButton
-						color={"tertiary"}
-						expand="full"
-						className="ion-margin"
-						onClick={sumNumbers}
-					>
-						Sumar
-					</IonButton>
+				<IonItem>
+					<IonInput
+						label="Ingresa el primer número:"
+						placeholder="Ejemplo: 2"
+						type="number"
+						name="x"
+						value={sum.x}
+						onInput={({ target }) =>
+							updateSum("x", Number((target as HTMLInputElement).value))
+						}
+					/>
+				</IonItem>
+				<IonItem>
+					<IonInput
+						label="Ingresa el segundo número:"
+						placeholder="Ejemplo: 5"
+						type="number"
+						name="y"
+						value={sum.y}
+						onInput={({ target }) =>
+							updateSum("y", Number((target as HTMLInputElement).value))
+						}
+					/>
+				</IonItem>
 
-					<IonItem color={"success"}>
-						<h1>Resultado: {sum.z}</h1>
-					</IonItem>
-				</IonContent>
+				<IonButton
+					color={"dark"}
+					expand="full"
+					className="ion-margin"
+					onClick={sumNumbers}
+				>
+					Sumar
+				</IonButton>
+
+				<IonItem color={"light"}>
+					<h1>Resultado: {sum.z}</h1>
+				</IonItem>
 			</IonContent>
 		</IonPage>
 	);
