@@ -25,16 +25,11 @@ export default function Mul() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle>Tabla de Multiplicar</IonTitle>
+					<IonTitle size="small">Tabla de Multiplicar</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 
 			<IonContent fullscreen>
-				<IonHeader collapse="condense">
-					<IonToolbar>
-						<IonTitle size="large">Tabla de Multiplicar</IonTitle>
-					</IonToolbar>
-				</IonHeader>
 				<IonList>
 					<IonItem>
 						<IonInput

@@ -16,17 +16,11 @@ export default function Experience() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle>Experiencia Personal</IonTitle>
+					<IonTitle size="small">Experiencia Personal</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 
 			<IonContent fullscreen>
-				<IonHeader collapse="condense">
-					<IonToolbar>
-						<IonTitle size="large">Experiencia Personal</IonTitle>
-					</IonToolbar>
-				</IonHeader>
-
 				<div className="page_container" id="experience-page">
 					<h1>Mi experiencia realizando esta tarea</h1>
 

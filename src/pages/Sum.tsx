@@ -34,17 +34,11 @@ export default function Sum() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle>Sumadora</IonTitle>
+					<IonTitle size="small">Sumadora</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 
 			<IonContent fullscreen>
-				<IonHeader collapse="condense">
-					<IonToolbar>
-						<IonTitle size="large">Sumadora</IonTitle>
-					</IonToolbar>
-				</IonHeader>
-
 				<IonItem>
 					<IonInput
 						label="Ingresa el primer número:"

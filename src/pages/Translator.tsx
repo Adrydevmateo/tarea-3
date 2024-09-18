@@ -58,16 +58,11 @@ export default function Translator() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle>Traductor de Números a Letras</IonTitle>
+					<IonTitle size="small">Traductor de Números a Letras</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 
 			<IonContent fullscreen>
-				<IonHeader collapse="condense">
-					<IonToolbar>
-						<IonTitle size="large">Traductor de Números a Letras</IonTitle>
-					</IonToolbar>
-				</IonHeader>
 				<IonList>
 					<IonItem>
 						<IonInput

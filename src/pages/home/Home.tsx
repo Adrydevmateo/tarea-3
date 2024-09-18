@@ -18,16 +18,11 @@ export default function Home() {
 					<IonButtons slot="start">
 						<IonMenuButton />
 					</IonButtons>
-					<IonTitle>Página Inicial</IonTitle>
+					<IonTitle size="small">Página Inicial</IonTitle>
 				</IonToolbar>
 			</IonHeader>
 
 			<IonContent fullscreen>
-				<IonHeader collapse="condense">
-					<IonToolbar>
-						<IonTitle size="large">Página Inicial</IonTitle>
-					</IonToolbar>
-				</IonHeader>
 				<div className="page_container" id="home-page">
 					<div className="home__content">
 						<h1 className="title">Adry Mateo Ramon</h1>
