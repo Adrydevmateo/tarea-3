@@ -13,18 +13,6 @@ img {
 }
 
 /* Utility Classes */
-.title {
-  font-size: calc(var(--font-size) + 20px);
-}
-
-.subtitle {
-  font-size: calc(var(--font-size) + 4px);
-}
-
-.muted {
-  opacity: .8;
-}
-
 .rounded_img {
   border-radius: 100%;
 }
