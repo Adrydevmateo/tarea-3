@@ -1,5 +1,10 @@
 import {
 	IonButtons,
+	IonCard,
+	IonCardContent,
+	IonCardHeader,
+	IonCardSubtitle,
+	IonCardTitle,
 	IonContent,
 	IonHeader,
 	IonMenuButton,
@@ -30,37 +35,37 @@ export default function Home() {
 						<IonTitle size="large">Página Inicial</IonTitle>
 					</IonToolbar>
 				</IonHeader>
-				<div className="page_container" id="home-page">
-					<div className="home__content">
-						<h1 className="title">Adry Mateo Ramon</h1>
-						<h2 className="subtitle muted">adrydevmateo@gmail.com</h2>
 
-						<div className="home__links">
-							<a
-								className="primary_link"
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://github.com/Adrydevmateo/tarea-3"
-							>
-								Repositorio del proyecto
-							</a>
-							<a
-								className="primary_link"
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://dashboard.ionicframework.com/preview/50704d43/mnqy7tc2rr"
-							>
-								Vista previa de la aplicación
-							</a>
-						</div>
+				<IonCard id="home-page">
+					<div>
+						<IonCardHeader>
+							<IonCardTitle>Adry Mateo Ramon</IonCardTitle>
+							<IonCardSubtitle>adrydevmateo@gmail.com</IonCardSubtitle>
+						</IonCardHeader>
+						<IonCardContent className="home__card-content">
+							<div className="home__links">
+								<a
+									className="primary_link"
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://github.com/Adrydevmateo/tarea-3"
+								>
+									Repositorio del proyecto
+								</a>
+								<a
+									className="primary_link"
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://dashboard.ionicframework.com/preview/50704d43/mnqy7tc2rr"
+								>
+									Vista previa de la aplicación
+								</a>
+							</div>
+						</IonCardContent>
 					</div>
-					<img
-						className="rounded_img"
-						src={ProfilePicture}
-						alt="Foto 2x2"
-						width={600}
-					/>
-				</div>
+
+					<img className="rounded_img" src={ProfilePicture} alt="Foto 2x2" />
+				</IonCard>
 			</IonContent>
 		</IonPage>
 	);
