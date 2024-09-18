@@ -36,14 +36,14 @@ import "@ionic/react/css/display.css";
 import "@ionic/react/css/palettes/dark.system.css";
 
 /* Custom Styles */
-import "@assets/stylesheets/main.css";
+import "./App.css";
 
 import { Routes } from "@/App.types";
-import Home from "@pages/home";
-import Sum from "./pages/sum";
-import Translator from "./pages/translator";
-import Mul from "./pages/mul";
-import Experience from "./pages/experience";
+import Home from "@pages/home/Home";
+import Sum from "@pages/Sum";
+import Translator from "@pages/Translator";
+import Mul from "@pages/Mul";
+import Experience from "@pages/Experience";
 
 setupIonicReact();
 

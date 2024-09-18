@@ -8,9 +8,7 @@ import {
 	IonToolbar,
 } from "@ionic/react";
 import "./Home.css";
-import ProfilePicture from "@assets/images/profile.jpg";
-
-// TODO: Muestren sus datos personales, incluyendo una foto 2x2, nombre, apellido y correo electrónico.
+import ProfilePicture from "@assets/profile.jpg";
 
 export default function Home() {
 	return (
@@ -48,7 +46,7 @@ export default function Home() {
 								className="primary_link"
 								target="_blank"
 								rel="noopener noreferrer"
-								href="https://dashboard.ionicframework.com/preview/50704d43/mnqy7tc2rr"
+								href=""
 							>
 								Vista previa de la aplicación
 							</a>

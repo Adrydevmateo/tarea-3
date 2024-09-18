@@ -1,11 +1,5 @@
-:root {
-  --font-size: 14px;
-}
-
 html {
-  font-size: var(--font-size);
   text-wrap: pretty;
-  word-break: break-all;
 }
 
 img {

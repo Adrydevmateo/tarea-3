@@ -11,10 +11,7 @@ import {
 	IonTitle,
 	IonToolbar,
 } from "@ionic/react";
-import "./Mul.css";
 import { useState, type FormEvent } from "react";
-
-// TODO: Un programa que acepte un número y muestre su tabla de multiplicar hasta el 13.
 
 export default function Mul() {
 	const [x, setX] = useState(0);

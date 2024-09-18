@@ -11,10 +11,7 @@ import {
 	IonTitle,
 	IonToolbar,
 } from "@ionic/react";
-import "./Sum.css";
 import { useState, type FormEvent } from "react";
-
-// TODO: Una página donde se puedan sumar dos números y mostrar el resultado.
 
 type Sum = {
 	x: number;

@@ -10,11 +10,7 @@ import {
 	IonTitle,
 	IonToolbar,
 } from "@ionic/react";
-import "./Translator.css";
 import { useState } from "react";
-import mul from "../mul";
-
-// TODO: Ingresen un número del 1 al 1000 y muestren ese número en letras en español. (No se permite el uso de APIs; la pérdida de puntos aplicará si se detecta su uso).
 
 export default function Translator() {
 	const [x, setX] = useState(0);
