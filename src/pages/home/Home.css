@@ -5,11 +5,32 @@
   padding: 20px;
 }
 
-#home-page>* {
-  flex-grow: 1;
+#home-page img {
+  max-height: 300px;
+  margin: auto;
 }
 
-#home-page img {
-  max-width: 150px;
+.home__card {
+  max-width: 310px;
   margin: auto;
+}
+
+#home-page a {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  #home-page img {
+    max-width: 250px;
+  }
+
+  #home-page a {
+    width: auto;
+  }
+
+  .home__card {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+  }
 }

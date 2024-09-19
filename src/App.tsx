@@ -6,7 +6,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
-import Menu from "@components/Menu";
+import Menu from "./components/Menu";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -39,11 +39,11 @@ import "@ionic/react/css/palettes/dark.system.css";
 import "./App.css";
 
 import { Routes } from "@/App.types";
-import Home from "@pages/home/Home";
-import Sum from "@pages/Sum";
-import Translator from "@pages/Translator";
-import Mul from "@pages/Mul";
-import Experience from "@pages/Experience";
+import Home from "./pages/home/Home";
+import Sum from "./pages/Sum";
+import Translator from "./pages/Translator";
+import Mul from "./pages/Mul";
+import Experience from "./pages/Experience";
 
 setupIonicReact();
 

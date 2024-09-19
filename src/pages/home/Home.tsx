@@ -1,5 +1,10 @@
 import {
 	IonButtons,
+	IonCard,
+	IonCardContent,
+	IonCardHeader,
+	IonCardSubtitle,
+	IonCardTitle,
 	IonContent,
 	IonHeader,
 	IonMenuButton,
@@ -8,7 +13,7 @@ import {
 	IonToolbar,
 } from "@ionic/react";
 import "./Home.css";
-import ProfilePicture from "@assets/profile.jpg";
+import ProfilePicture from "../../assets/profile.jpg";
 
 export default function Home() {
 	return (
@@ -24,35 +29,45 @@ export default function Home() {
 
 			<IonContent fullscreen>
 				<div className="page_container" id="home-page">
-					<div className="home__content">
-						<h1 className="title">Adry Mateo Ramon</h1>
-						<h2 className="subtitle muted">adrydevmateo@gmail.com</h2>
+					<IonCard className="home__card">
+						<img src={ProfilePicture} alt="Foto 2x2" width={600} />
+						<div>
+							<IonCardHeader>
+								<IonCardTitle>Adry Mateo Ramon</IonCardTitle>
+								<IonCardSubtitle>adrydevmateo@gmail.com</IonCardSubtitle>
+							</IonCardHeader>
 
-						<div className="home__links">
-							<a
-								className="primary_link"
-								target="_blank"
-								rel="noopener noreferrer"
-								href="https://github.com/Adrydevmateo/tarea-3"
-							>
-								Repositorio del proyecto
-							</a>
-							<a
-								className="primary_link"
-								target="_blank"
-								rel="noopener noreferrer"
-								href=""
-							>
-								Vista previa de la aplicación
-							</a>
+							<IonCardContent>
+								<p>
+									Soy un aprendiz permanente, que amplía constantemente sus
+									conocimientos y se mantiene al tanto de las últimas tendencias
+									en desarrollo front-end. ¡Colaboremos y hagamos realidad su
+									visión!
+								</p>
+
+								<br />
+
+								<div>
+									<a
+										className="primary_link"
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://github.com/Adrydevmateo/tarea-3"
+									>
+										Repositorio del proyecto
+									</a>
+									<a
+										className="primary_link"
+										target="_blank"
+										rel="noopener noreferrer"
+										href=""
+									>
+										Vista previa de la aplicación
+									</a>
+								</div>
+							</IonCardContent>
 						</div>
-					</div>
-					<img
-						className="rounded_img"
-						src={ProfilePicture}
-						alt="Foto 2x2"
-						width={600}
-					/>
+					</IonCard>
 				</div>
 			</IonContent>
 		</IonPage>

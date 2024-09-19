@@ -6,6 +6,10 @@ img {
   min-width: 0;
 }
 
+iframe {
+  width: 100%;
+}
+
 /* Utility Classes */
 .rounded_img {
   border-radius: 100%;
@@ -23,6 +27,7 @@ img {
   background-color: royalblue;
   font-weight: bold;
   margin: 3px;
+  text-align: center;
 }
 
 @media (min-width: 400px) {

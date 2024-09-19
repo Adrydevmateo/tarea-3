@@ -11,7 +11,7 @@ import {
 	IonTitle,
 	IonToolbar,
 } from "@ionic/react";
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 
 export default function Mul() {
 	const [x, setX] = useState(0);

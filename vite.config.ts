@@ -12,9 +12,6 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"@": resolve(root, ""),
-			"@components": resolve(root, "components"),
-			"@pages": resolve(root, "pages"),
-			"@assets": resolve(root, "assets"),
 		},
 	},
 	plugins: [react(), legacy()],
