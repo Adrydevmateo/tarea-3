@@ -25,3 +25,8 @@
 [Explicación del proyecto](https://www.youtube.com/watch?v=bn8W7454JaM)
 
 [Repositorio del proyecto](https://github.com/Adrydevmateo/tarea-3)
+
+[Vista previa](https://dashboard.ionicframework.com/preview/50704d43/ddv04i33wa)
+
+## Vista previa con QR
+<img src="./src/assets/preview-qr.png" />

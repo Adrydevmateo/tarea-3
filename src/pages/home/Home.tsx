@@ -60,7 +60,7 @@ export default function Home() {
 										className="primary_link"
 										target="_blank"
 										rel="noopener noreferrer"
-										href=""
+										href="https://dashboard.ionicframework.com/preview/50704d43/ddv04i33wa"
 									>
 										Vista previa de la aplicación
 									</a>
